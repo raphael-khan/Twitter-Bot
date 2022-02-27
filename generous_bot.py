@@ -1,4 +1,5 @@
-## GENEROUS TWITTER BOT THAT ACCEPTS FOLLW REQUEST & ALWAYS FOLLOWS BACK ##
+## GENEROUS TWITTER BOT ##
+
 import tweepy
 
 auth = tweepy.OAuth1UserHandler('qBihiBhXCKdtslKUwNd4ZJLlN','ILzBqUcmSuNpHrO2P2xvnnTjWq8itgC0V0bN6JyUHR9ucmuwZb')
@@ -7,7 +8,12 @@ auth.set_access_token('905030098692255745-7PwvgSWK0lWrF4aU8ERE1ZiSToylwH7', 'YWb
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
 
+# iterates through the followers of a user. 
 for follower in tweepy.Cursor(api.get_followers).items():
     if follower.name == 'Mazen':
         follower.follow()
         print('You have successfully follow back')
+        
+# iterates through the followings of a user. 
+for friend in tweepy.Cursor(api.get_friends).items():
+    print(friend.name)
