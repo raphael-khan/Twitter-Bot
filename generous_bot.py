@@ -8,12 +8,17 @@ auth.set_access_token('905030098692255745-7PwvgSWK0lWrF4aU8ERE1ZiSToylwH7', 'YWb
 api = tweepy.API(auth, wait_on_rate_limit=True)
 
 
-# iterates through the followers of a user. 
+# iterates through the followers of a user. Follows back a specifc user. 
 for follower in tweepy.Cursor(api.get_followers).items():
     if follower.name == 'Mazen':
         follower.follow()
         print('You have successfully follow back')
-        
+
+# iterates through the followers of a user. Follows back all requests.  
+for follower in tweepy.Cursor(api.get_followers).items():
+    follower.follow()
+    print('You have successfully followed back all requests')
+
 # iterates through the followings of a user. 
 for friend in tweepy.Cursor(api.get_friends).items():
-    print(friend.name)
+    print(friend.name, friend.location)
