@@ -1,4 +1,5 @@
-# twitter_bot_project
+# Twitter_Bot_Project ![image](https://user-images.githubusercontent.com/89990638/167235448-ff87b9f1-ff5b-4d07-806c-fbd4ee9080c3.png)
+
 
 This Twitter bot uses the Twitter API to make calls to your account and automate tasks. 
 
