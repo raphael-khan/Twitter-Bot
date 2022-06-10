@@ -9,7 +9,7 @@ This Twitter bot uses the Twitter API to make calls to your account and automate
     The seach parameter can include a title or a user name. The searched post can then be set up to either liked automatically or retweeted. 
     
  
-/// Narcisstic bot automated to searching Twiiter with a given search string paramter "python' search string and favoriting / liking them. In this case the bot was set up to like the 5 latest posts containing the string "python"
+/// The "narcisstic" twitter bot automated to searching Twiiter with a given search string paramter "python' search string and favoriting / liking them. In this case the bot was set up to like the 5 latest posts containing the string "python"
 
 ![image](https://user-images.githubusercontent.com/89990638/161448012-ed98d3f0-a0e8-45de-a269-38537c2d87ec.png)
 
